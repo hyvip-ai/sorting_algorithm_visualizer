@@ -36,13 +36,16 @@
           myBars
         );
         myBars = data;
-        await new Promise((res, rej) => {
-          setTimeout(() => {
-            res();
-          }, 500);
-        });
+        if (swap) {
+          await new Promise((res, rej) => {
+            setTimeout(() => {
+              res();
+            }, 500);
+          });
+        }
       }
     }
+    alert("Array Sorted");
   };
 </script>
 

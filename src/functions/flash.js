@@ -9,7 +9,7 @@ export async function flashBars(first, second, i, j, swap, array) {
         if (swap) {
           first.classList.add("swapping");
           second.classList.add("swapping");
-          setTimeout(() => {
+          setTimeout(async() => {
             let temp = array[i];
             array[i] = array[j];
             array[j] = temp;
@@ -21,6 +21,6 @@ export async function flashBars(first, second, i, j, swap, array) {
           resolve(array);
         }
       }, 500);
-    }, 1000);
+    }, 800);
   });
 }

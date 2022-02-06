@@ -9,5 +9,6 @@
     width: 50px;
     background-color: rgb(8, 255, 160);
     margin-right: 5px;
+    transition: all 0.5s;
   }
 </style>
