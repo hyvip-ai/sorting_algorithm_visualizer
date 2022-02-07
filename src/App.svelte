@@ -22,7 +22,6 @@
     sortingBars = document.querySelectorAll(".bar");
     for (let i = 0; i < myBars.length - 1; i++) {
       for (let j = i + 1; j < myBars.length; j++) {
-        console.log(i, j);
         let swap =
           sortingBars[i].clientHeight > sortingBars[j].clientHeight
             ? true
