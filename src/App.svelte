@@ -95,9 +95,9 @@
     cursor: pointer;
   }
   .bars {
-    margin-top: 25px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    height: 500px;
   }
 </style>
